@@ -5,13 +5,13 @@ Nienke van de Kimmenade
 Hasty Shakibania
 Odongo Ser-Od
  
-Introduction
+# Introduction
 Our project involves the construction of three models, developed in-house and built upon a specific dataset. The primary objective of these models is to forecast an 
 independent variable, specifically an individual's physical health, which is a feature within the dataset named "medcenter." Throughout the course of our project, 
 we encountered various challenges related to both the dataset and the code utilized in constructing the models. Addressing these issues necessitated a deeper 
 comprehension of the dataset. Ultimately, we successfully devised three regression models designed to predict an individual's health.
  
-Methods
+## Methods
 Firstly, we conducted preprocessing to ensure data quality. Within this preprocessing phase, we took measures to guarantee the distinctiveness of all variables and the 
 absence of missing values. We also analyzed the ranges of certain numerical features, including physical health, BMI, and mental health.  
 It became apparent that several of our features were categorical, necessitating conversion to numerical format using OneHotEncoder, resulting in binary representations 
@@ -44,7 +44,9 @@ We deleted all the zeros of physical health which had no clear indication repres
 that this would not mean that the physical health of that person would be perfect. For mental health we could not figure out how to establish that someone is in 
 perfect mental health and when the zero would represent a missing value. This led us to deleting all the values of zero in the mental health variable. After removing 
 a part of the data, our models performed a lot better.
-Experimental Design
+
+## Experimental Design
+
 In our analysis, we employed Mean Absolute Error (MAE) and R-squared (R2) score as our evaluation metrics for assessing the performance of our machine learning model. 
 These metrics were chosen for their relevance and effectiveness in capturing different aspects of model performance.
 To establish a reference point for model performance, we implemented a baseline model. The baseline model is a simple and interpretable model, serving as a benchmark 
